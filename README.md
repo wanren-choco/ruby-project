@@ -1,52 +1,52 @@
 
-# ���̂���Ruby ��6��
+# たのしいRuby 第6版
 
-## ����
+## 導入
 
 - https://chocolatey.org/install
 
-����Q�l��Chocolatey���C���X�g�[������BWindows�̃\�t�g�E�F�A���p�b�P�[�W�Ǘ����邽�߂̃c�[���BWindows�{�̂ɂ�����gem�Ǝv���΂悢�B
+上を参考にChocolateyをインストールする。Windowsのソフトウェアをパッケージ管理するためのツール。Windows本体におけるgemと思えばよい。
 
-- msys2: C����ŏ����ꂽ�g�����C�u�������d�l����ۂɎg���Bsqlite�ȂǁB
+- msys2: C言語で書かれた拡張ライブラリを仕様する際に使う。sqliteなど。
 
 ```
 choco install ruby
 choco install msys2
 ```
 
-ruby��msys2���C���X�g�[������B
+rubyとmsys2をインストールする。
 
 ## IDE
 
-���ł��ǂ����S����Ή��A���J�X�^�}�C�Y���A�����̖��\IDE�ł���Visual Studio Code���g�p����̂����E�W���ƂȂ����B
+何でも良いが全言語対応、高カスタマイズ性、無償の万能IDEであるVisual Studio Codeを使用するのが世界標準となりつつある。
 
-VSCode���N������extension�ꗗ����Ruby, Code Runner���C���X�g�[������B
+VSCodeを起動してextension一覧からRuby, Code Runnerをインストールする。
 
-Ctrl + ` : VSCode������R���\�[���N������V���[�g�J�b�g�Birb��ruby�R�}���h�͂���������łĂ�B
+Ctrl + ` : VSCode内からコンソール起動するショートカット。irbやrubyコマンドはここからも打てる。
 
 ## gem
 
-Ruby�ɂ�����p�b�P�[�W�Ǘ��c�[���B�ڍׂ͒ǂ��ǂ��G���B
+Rubyにおけるパッケージ管理ツール。詳細は追い追い触れる。
 
-## 0��
+## 0章
 
-- �I�u�W�F�N�g�w������
-- �葱���^����
+- オブジェクト指向言語
+- 手続き型言語
 
-- �X�N���v�g����
-- �R���p�C���^����
+- スクリプト言語
+- コンパイラ型言語
 
-## 1��
+## 1章
 
 ```
 irb(main):001:0> print('hoge')
 hoge=> nil
 ```
 
-�u=> nil�v�͖߂�l��nil(null)�ł���Ƃ������ƁBprint���\�b�h�͕������o�͂��邪�A���\�b�h�Ƃ��Ă͉����Ԃ��Ȃ��B
+「=> nil」は戻り値がnil(null)であるということ。printメソッドは文字を出力するが、メソッドとしては何も返さない。
 
-- �V���O���N�H�[�g�F���ꕶ���i���s�������j�����̂܂ܕ\��
-- �_�u���N�H�[�g�F���ꕶ�������߂��ĕ\��
+- シングルクォート：特殊文字（改行文字等）をそのまま表示
+- ダブルクォート：特殊文字を解釈して表示
 
 ```
 irb(main):004:0> print "hoge\n", "piyo\n", "fuga\n"
@@ -56,7 +56,7 @@ fuga
 => nil
 ```
 
-Ruby�ł̓��\�b�h�̊��ʂ��ȗ��ł���B�܂��A�������J���}�ŘA���ł���B
+Rubyではメソッドの括弧を省略できる。また、引数をカンマで連結できる。
 
 ```
 irb(main):005:0> p 100
@@ -67,18 +67,18 @@ irb(main):006:0> p "100"
 => "100"
 ```
 
-p���\�b�h�F���l�ƕ��������ʂ��ĕ\������B�f�o�b�O�p�̃��\�b�h�B
+pメソッド：数値と文字列を区別して表示する。デバッグ用のメソッド。
 
 ```
 // chap01.rb
 
 hoge = 10
-print "�ق��F#{hoge}\n"
+print "ほげ：#{hoge}\n"
 ```
 
-`#{variable}`�ŕϐ����_�u���N�H�[�g�̒��ɖ��ߍ��߂�B
+`#{variable}`で変数をダブルクォートの中に埋め込める。
 
-Code Runner���C���X�g�[�����Ă����ƁArb�t�@�C�����ȒP�Ɏ��s�ł���BCtrl + Shift + P -> Run Code�Ŏ��s�B����͂��̕��@�ō쐬�����R�[�h�����s���Ă����B
+Code Runnerをインストールしておくと、rbファイルを簡単に実行できる。Ctrl + Shift + P -> Run Codeで実行。今後はこの方法で作成したコードを実行していく。
 
 ```
 a = 10
@@ -89,7 +89,7 @@ else
 end
 ```
 
-if���Bthen�͏ȗ��\�B
+if文。thenは省略可能。
 
 ```
 10.times do
@@ -97,11 +97,11 @@ if���Bthen�͏ȗ��\�B
 end
 ```
 
-times���\�b�h�B�C�e���[�^��Ruby�̓����I�ȕ��@�ł���B�������Ƃ̕��ł����Ɛ��������B
+timesメソッド。イテレータはRubyの特徴的な文法である。多分あとの方でちゃんと説明される。
 
-## ��2��
+## 第2章
 
-### �V���{��
+### 配列
 
 ```
 hoge = ["aaa", "bbb", "ccc"]
@@ -116,9 +116,9 @@ hoge.each do |n|
 end
 ```
 
-each���\�b�h��times���\�b�h�Ɠ����C�e���[�^�B`|n|`�͔z��̒��������v�f��ϐ��Ƃ��Ď��o���Ă���BRuby�Ɠ��̏������B
+eachメソッドはtimesメソッドと同じイテレータ。`|n|`は配列の中から一つずつ要素を変数として取り出している。Ruby独特の書き方。
 
-### �n�b�V��
+### ハッシュ
 
 ```
 sym = :foo
@@ -126,11 +126,11 @@ p sym.to_s
 p "foo".to_sym
 ```
 
-�V���{���B���O�����ʂ��邽�߂̃��x���BRuby�ł̓n�b�V���̃L�[�ɃV���{�����g���B
+シンボル。名前を識別するためのラベル。Rubyではハッシュのキーにシンボルを使う。
 
 ```
-hoge = {:name => "�ق�", :age => 30}
-fuga = {name: "�ӂ�", age: 29}
+hoge = {:name => "ほげ", :age => 30}
+fuga = {name: "ふが", age: 29}
 
 p hoge
 p fuga
@@ -138,7 +138,7 @@ p hoge[:name]
 p fuga[:name]
 ```
 
-�㉺�͓����Ӗ��B���̋L�@�ł��n�b�V���̃L�[�̓V���{���ɂȂ��Ă���A���o���ۂ̓V���{�����w�肷��K�v������B
+上下は同じ意味。下の記法でもハッシュのキーはシンボルになっており、取り出す際はシンボルを指定する必要がある。
 
 ```
 hoge.each do |key, value|
@@ -146,9 +146,9 @@ hoge.each do |key, value|
 end
 ```
 
-�n�b�V����each�ŉ񂷍ۂ�key, value�̓�̕ϐ������o���B
+ハッシュをeachで回す際はkey, valueの二つの変数を取り出す。
 
-### ���K�\��
+### 正規表現
 
 ```
 irb(main):003:0> /hoge/ =~ "hhhhhhhhogeeeee"
@@ -158,11 +158,11 @@ irb(main):004:0> /hoge/ =~ "fuga"
 => nil
 ```
 
-�}�b�`�����擪�ʒu��0�ԃX�^�[�g�ŕԂ��B�}�b�`���O���Ȃ��ꍇ��nil��Ԃ��B
+マッチした先頭位置を0番スタートで返す。マッチングしない場合はnilを返す。
 
-���K�\���͂��Ȃ����̂����A�Ȃ�����ȏ��Ղɏo���Ă���̂���B�ǂ��ǂ����Ǝv���B
+正規表現はかなり難しいのだが、なぜこんな序盤に出してくるのか謎。追い追いやると思う。
 
-## ��O��
+## 第三章
 
 ```
 num1 = ARGV[0]
@@ -178,7 +178,7 @@ first: 10
 30
 ```
 
-�t�@�C�����s���̈�����`ARGC[n]`�̌`���Ŏ��o�����Ƃ��ł���B
+ファイル実行時の引数を`ARGC[n]`の形式で取り出すことができる。
 
 
 
