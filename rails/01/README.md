@@ -1,38 +1,38 @@
-# “ÆK Ruby on Rails
+# ç‹¬ç¿’ Ruby on Rails
 
-## ‘æˆêÍ
+## ç¬¬ä¸€ç« 
 
-### —pŒê
+### ç”¨èª
 
-- ƒtƒŒ[ƒ€ƒ[ƒNFìÒ‚Ìu˜g‘g‚İvud‘g‚İv‚É]‚Á‚ÄŠJ”­‚·‚é‚±‚Æ‚ÅŠJ”­‚ğŒø—¦‰»‚Å‚«‚é
+- ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ï¼šä½œè€…ã®ã€Œæ çµ„ã¿ã€ã€Œä»•çµ„ã¿ã€ã«å¾“ã£ã¦é–‹ç™ºã™ã‚‹ã“ã¨ã§é–‹ç™ºã‚’åŠ¹ç‡åŒ–ã§ãã‚‹
 - DRY: Don't Repeat Yourself
 - CoC: Convention Over Configuration
-- uİ’è‚æ‚è‹K–ñvF‚æ‚­g‚¤ˆ—‚Í‚ ‚ç‚©‚¶‚ßÀ‘•Ï‚İBŠJ”­Ò‚ª—]Œv‚ÈÀ‘•‚ğs‚¤•K—v‚ª‚È‚¢
+- ã€Œè¨­å®šã‚ˆã‚Šè¦ç´„ã€ï¼šã‚ˆãä½¿ã†å‡¦ç†ã¯ã‚ã‚‰ã‹ã˜ã‚å®Ÿè£…æ¸ˆã¿ã€‚é–‹ç™ºè€…ãŒä½™è¨ˆãªå®Ÿè£…ã‚’è¡Œã†å¿…è¦ãŒãªã„
 
-- ƒŠƒ\[ƒXƒtƒ‹ƒ‹[ƒeƒBƒ“ƒO
-- ƒIƒuƒWƒFƒNƒgwŒü
+- ãƒªã‚½ãƒ¼ã‚¹ãƒ•ãƒ«ãƒ«ãƒ¼ãƒ†ã‚£ãƒ³ã‚°
+- ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæŒ‡å‘
 - MVC
 
-### ŠÂ‹«\’z(WSL2)
+### ç’°å¢ƒæ§‹ç¯‰(WSL2)
 
-- Vagrant: Windows‚Ì’†‚ÉLinux‚Ì‰¼‘zŠÂ‹«(VM)‚ğ“ü‚ê‚ÄA‚»‚Ì’†‚ÉRuby“™‚ÌÀsŠÂ‹«‚Ì‘µ‚Á‚½ƒT[ƒo‚ğ\’z‚·‚é
+- Vagrant: Windowsã®ä¸­ã«Linuxã®ä»®æƒ³ç’°å¢ƒ(VM)ã‚’å…¥ã‚Œã¦ã€ãã®ä¸­ã«Rubyç­‰ã®å®Ÿè¡Œç’°å¢ƒã®æƒã£ãŸã‚µãƒ¼ãƒã‚’æ§‹ç¯‰ã™ã‚‹
 
-–{‘‚Åg—p‚³‚ê‚Ä‚¢‚éVagrant‚Íd—v‚È‹Zp‚Å‚Í‚ ‚é‚ªAáŠ±‘ã’x‚ê‚É‚È‚è‚Â‚Â‚ ‚é‚Ì‚Å–{•×‹­‰ï‚Å‚ÍWSL2‚ğg—p‚·‚éB
+æœ¬æ›¸ã§ä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹Vagrantã¯é‡è¦ãªæŠ€è¡“ã§ã¯ã‚ã‚‹ãŒã€è‹¥å¹²æ™‚ä»£é…ã‚Œã«ãªã‚Šã¤ã¤ã‚ã‚‹ã®ã§æœ¬å‹‰å¼·ä¼šã§ã¯WSL2ã‚’ä½¿ç”¨ã™ã‚‹ã€‚
 
-uƒvƒƒOƒ‰ƒ€‚Æ‹@”\v ¨ uHyper-VvuWindows Subsystem for Linuxv‚Éƒ`ƒFƒbƒNB‚½‚Ô‚ñÄ‹N“®‚ª•K—vB
+ã€Œãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¨æ©Ÿèƒ½ã€ â†’ ã€ŒHyper-Vã€ã€ŒWindows Subsystem for Linuxã€ã«ãƒã‚§ãƒƒã‚¯ã€‚ãŸã¶ã‚“å†èµ·å‹•ãŒå¿…è¦ã€‚
 
-WindowsƒXƒgƒA‚©‚çuUbuntuvi”š‚Ì‘‚¢‚Ä‚¢‚È‚¢‚à‚Ìj‚ğƒCƒ“ƒXƒg[ƒ‹B
+Windowsã‚¹ãƒˆã‚¢ã‹ã‚‰ã€ŒUbuntuã€ï¼ˆæ•°å­—ã®æ›¸ã„ã¦ã„ãªã„ã‚‚ã®ï¼‰ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã€‚
 
 - https://github.com/mintty/wsltty/releases
 
-WSL‚Ì•W€ƒRƒ“ƒ\[ƒ‹‚ÍŒ©h‚¢‚Ì‚Åwsltty‚ª‚¨‚·‚·‚ßB
+WSLã®æ¨™æº–ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã¯è¦‹è¾›ã„ã®ã§wslttyãŒãŠã™ã™ã‚ã€‚
 
 ```
 sudo apt install git g++ make vim libreadline-dev -y
 sudo apt install libssl-dev zlib1g-dev nodejs -y
 ```
 
-•K—v‚ÈƒpƒbƒP[ƒWŒQ‚ğ“ü‚ê‚éB`choco install`‚Æ‚â‚Á‚Ä‚¢‚é‚±‚Æ‚Í“¯‚¶B
+å¿…è¦ãªãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ç¾¤ã‚’å…¥ã‚Œã‚‹ã€‚`choco install`ã¨ã‚„ã£ã¦ã„ã‚‹ã“ã¨ã¯åŒã˜ã€‚
 
 ```
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -41,13 +41,13 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 . ~/.bashrc
 ```
 
-rbenv‚ğ“ü‚ê‚éB
+rbenvã‚’å…¥ã‚Œã‚‹ã€‚
 
 ```
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
-ruby-build‚ğ“ü‚ê‚éB
+ruby-buildã‚’å…¥ã‚Œã‚‹ã€‚
 
 ```
 $ rbenv install -l
@@ -61,11 +61,15 @@ rbx-5.0
 truffleruby-20.1.0
 ```
 
-ƒCƒ“ƒXƒg[ƒ‹‰Â”\‚ÈRubyˆê——B2.7.1‚ğ“ü‚ê‚éB
+ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¯èƒ½ãªRubyä¸€è¦§ã€‚2.7.1ã‚’å…¥ã‚Œã‚‹ã€‚
 
 ```
 rbenv install 2.7.1
 rbenv global 2.7.1
 rbenv rehash
 sudo apt install ruby-railties -y
+```
+
+```
+sudo gem install bundler
 ```
