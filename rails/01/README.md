@@ -77,3 +77,17 @@ gem install rails
 $ rails -v
 Rails 6.0.3.2
 ```
+
+```
+sudo apt install -y sqlite3
+sudo apt install -y libsqlite3-dev
+```
+
+```
+git --version
+rbenv -v 
+ruby -v
+bundler -v
+rails -v
+sqlite3 --version
+```
