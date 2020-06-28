@@ -91,3 +91,7 @@ bundler -v
 rails -v
 sqlite3 --version
 ```
+
+```
+ln -s /mnt/c/Users/boundman/src ~/src
+```
