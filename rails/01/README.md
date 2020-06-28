@@ -72,4 +72,5 @@ sudo apt install ruby-railties -y
 
 ```
 sudo gem install bundler
+sudo gem install rails
 ```
