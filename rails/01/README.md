@@ -73,4 +73,7 @@ sudo apt install ruby-railties -y
 ```
 gem install bundler
 gem install rails
+
+$ rails -v
+Rails 6.0.3.2
 ```
